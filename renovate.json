@@ -1,0 +1,13 @@
+{
+    "extends": ["config:base"],
+    "automerge": true,
+    "customManagers": [
+        {
+            "customType": "regex",
+            "fileMatch": ["^version.txt$"],
+            "matchStrings": ["(?<currentValue>.*?)"],
+            "depNameTemplate": "microsoft/vscode",
+            "datasourceTemplate": "github-releases"
+        }
+    ]
+}
