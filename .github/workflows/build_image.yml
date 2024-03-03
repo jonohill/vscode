@@ -28,7 +28,7 @@ jobs:
 
       - name: Read version
         id: set_version
-        run: echo "name=version" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(cat version.txt)" >> "$GITHUB_OUTPUT"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
