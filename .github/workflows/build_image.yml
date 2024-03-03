@@ -1,9 +1,7 @@
 name: Build Docker Image
 
 on:
-  push:
-    branches:
-      - main
+  - push
 
 permissions:
   packages: write
