@@ -5,7 +5,7 @@
         {
             "customType": "regex",
             "fileMatch": ["^version.txt$"],
-            "matchStrings": ["(?<currentValue>.*?)"],
+            "matchStrings": ["(?<currentValue>\\d+\\.\\d+\\.\\d+)"],
             "depNameTemplate": "microsoft/vscode",
             "datasourceTemplate": "github-releases"
         }
