@@ -5,7 +5,7 @@ ARG TARGETPLATFORM
 COPY download.sh /tmp/download.sh
 RUN /tmp/download.sh
 
-FROM debian:12.11-slim
+FROM debian:13.0-slim
 
 # renovate: datasource=github-releases depName=microsoft/vscode
 ENV VSCODE_VERSION=1.86.2
